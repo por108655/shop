@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <!-- Font Awesome CDN สำหรับไอคอน -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- เชื่อมต่อไฟล์ CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ส่วนของแถบเมนูด้านบน (Navbar) -->
+    <nav>
+        <div class="box">
+            <!-- โลโก้ร้าน -->
+            <a href="#" class="logo">
+                <img src="logo.png" alt="Logo">
+                <h2>Fruit <sub class="title-sub">shop</sub></h2>
+            </a>
+
+            <!-- เมนูหลัก -->
+            <ul class="menu">
+                <li><a href="#">สินค้าทั้งหมด</a></li>
+                <li><a href="#">ตะกร้าสินค้า</a></li>
+            </ul>
+
+            <!-- ตะกร้าสินค้าและรูปโปรไฟล์ -->
+            <div class="profile">
+                <div class="cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <p>5</p>
+                </div>
+                <div class="profile-image">
+                    <img src="profile.jpg" alt="Profile">
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ส่วนแสดงรายการสินค้า -->
+    <section class="shop">
+        <div class="product-grid">
+            
+            <!-- การ์ดสินค้าที่ 1 (สามารถคัดลอกบล็อก product-card นี้ไปวางเพิ่มได้ตามต้องการ) -->
+            <div class="product-card">
+                <img src="https://media.istockphoto.com/id/1439436349/th/%E0%B8%A3%E0%B8%B9%E0%B8%9B%E0%B8%96%E0%B9%88%E0%B8%B2%E0%B8%A2/%E0%B9%81%E0%B8%AD%E0%B8%9B%E0%B9%80%E0%B8%9B%E0%B8%B4%E0%B9%89%E0%B8%A5%E0%B8%AA%E0%B8%B5%E0%B9%81%E0%B8%94%E0%B8%87%E0%B9%81%E0%B8%A2%E0%B8%81%E0%B8%9A%E0%B8%99%E0%B8%9E%E0%B8%B7%E0%B9%89%E0%B8%99%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%87%E0%B8%AA%E0%B8%B5%E0%B8%82%E0%B8%B2%E0%B8%A7-%E0%B9%80%E0%B8%AA%E0%B9%89%E0%B8%99%E0%B8%97%E0%B8%B2%E0%B8%87%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%95%E0%B8%B1%E0%B8%94-%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1%E0%B8%A5%E0%B8%B6%E0%B8%81%E0%B9%80%E0%B8%95%E0%B9%87%E0%B8%A1%E0%B8%A3%E0%B8%B9%E0%B8%9B%E0%B9%81%E0%B8%9A%E0%B8%9A%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B8%AA%E0%B8%99%E0%B8%B2%E0%B8%A1.jpg?s=612x612&w=0&k=20&c=UM6b3QVdHnIbPA4GbffsWfX9-JmGZulUJt8tvHEyyGs=" alt="Apple" class="product-image">
+                <div class="product-info">
+                    <h2>Apple</h2>
+                    <label>
+                        จำนวน
+                        <input type="number" class="quantity" min="1" value="1">
+                    </label>
+                    <button type="button" class="add-to-cart">
+                        <i class="fa-solid fa-cart-plus"></i> เพิ่มลงในตะกร้า
+                    </button>
+                </div>
+            </div>
+
+            <!-- การ์ดสินค้าที่ 2 -->
+            <div class="product-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnhNMDUvuyBY5w36hkOTxT3knoFlVYWZ0NodXrXJNa4w&s=10" alt="Apple" class="product-image">
+                <div class="product-info">
+                    <h2>banana</h2>
+                    <label>
+                        จำนวน
+                        <input type="number" class="quantity" min="1" value="1">
+                    </label>
+                    <button type="button" class="add-to-cart">
+                        <i class="fa-solid fa-cart-plus"></i> เพิ่มลงในตะกร้า
+                    </button>
+                </div>
+            </div>
+
+            <!-- การ์ดสินค้าที่ 3 -->
+            <div class="product-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpijdNv9CaASdL3VPnI1Win-rct_GdLKJGQKTgEH1_4KFP_EirtuTVsik&s=10" alt="Apple" class="product-image">
+                <div class="product-info">
+                    <h2>pineapple</h2>
+                    <label>
+                        จำนวน
+                        <input type="number" class="quantity" min="1" value="1">
+                    </label>
+                    <button type="button" class="add-to-cart">
+                        <i class="fa-solid fa-cart-plus"></i> เพิ่มลงในตะกร้า
+                    </button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLxJfIpTaHtDij3fP-keZgf0mjdHg0_5A2DaQcBiFlcsvjL_Ebd-RfuE4&s=10=" alt="Apple" class="product-image">
+                <div class="product-info">
+                    <h2>watermelon</h2>
+                    <label>
+                        จำนวน
+                        <input type="number" class="quantity" min="1" value="1">
+                    </label>
+                    <button type="button" class="add-to-cart">
+                        <i class="fa-solid fa-cart-plus"></i> เพิ่มลงในตะกร้า
+                    </button>
+                </div>
+
+            </div><div class="product-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyWojjxk7iFw1KAD88W1W91HrEroq5hSgTXCsNG6-8IQ&s=10=" alt="Apple" class="product-image">
+                <div class="product-info">
+                    <h2>orange</h2>
+                    <label>
+                        จำนวน
+                        <input type="number" class="quantity" min="1" value="1">
+                    </label>
+                    <button type="button" class="add-to-cart">
+                        <i class="fa-solid fa-cart-plus"></i> เพิ่มลงในตะกร้า
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

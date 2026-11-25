@@ -1,0 +1,206 @@
+/* นำเข้า Google Font (Kanit) */
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Kanit", sans-serif;
+    color: #25352B;
+}
+
+body {
+    background-color: #ECFFD8;
+    min-height: 100vh;
+}
+
+/* ================= NAVBAR ================= */
+nav {
+    position: relative;
+    z-index: 100;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #E8E3E3;
+    box-shadow: 0 8px 24px #2B492812;
+}
+
+nav .box {
+    max-width: 1200px;
+    padding: 0 12px;
+    min-height: 82px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+/* โลโก้ */
+.box .logo {
+    display: flex;
+    align-items: center;
+    color: #2D6B38;
+    text-decoration: none;
+}
+
+.box .logo img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.box .logo h2 {
+    margin-left: 10px;
+    color: #2D6B38;
+}
+
+.box .title-sub {
+    color: #F08A32;
+}
+
+/* เมนูตรงกลาง */
+.box .menu {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    list-style: none;
+}
+
+.box .menu li a {
+    display: flex;
+    align-items: center;
+    padding: 4px 18px;
+    text-decoration: none;
+    border-radius: 12px;
+    transition: 0.2s;
+}
+
+.box .menu li a:hover {
+    color: #28733A;
+    background-color: #EDF6E8;
+}
+
+/* ส่วนโปรไฟล์และตะกร้าด้านขวา */
+.box .profile {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+}
+
+.box .profile .cart {
+    position: relative;
+    cursor: pointer;
+}
+
+.box .profile i {
+    font-size: 24px;
+}
+
+.box .profile .cart p {
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    width: 20px;
+    height: 20px;
+    background-color: #E53935;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #FFFFFF;
+    font-size: 12px;
+}
+
+.box .profile .profile-image img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #AAAAAA;
+}
+
+/* ================= SHOP SECTION ================= */
+.shop {
+    width: min(100% - 40px, 1180px);
+    margin: 0 auto;
+    padding: 56px 0 72px;
+}
+
+.shop .product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.shop .product-card {
+    border: 1px solid #D5E0DF;
+    border-radius: 18px;
+    background-color: #FFFFFF;
+    box-shadow: 0 8px 24px #304C2B0D;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+.shop .product-card:hover {
+    box-shadow: 0 14px 30px #304C2B18;
+}
+
+.shop .product-card .product-image {
+    display: block;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    background-color: #EDF6E8;
+}
+
+.shop .product-info {
+    padding: 18px;
+}
+
+.shop .product-info h2 {
+    color: #2D5935;
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.shop .product-info label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    color: #59675B;
+    font-size: 0.9rem;
+}
+
+.shop .product-info .quantity {
+    width: 76px;
+    height: 38px;
+    padding: 0 8px;
+    border: 1px solid #DCE7D7;
+    background-color: #FDFDF9;
+    font-size: 1rem;
+    text-align: center;
+    border-radius: 6px;
+}
+
+.shop .product-info .add-to-cart {
+    width: 100%;
+    min-height: 43px;
+    margin-top: 13px;
+    border: 0;
+    border-radius: 10px;
+    color: #FFFFFF;
+    background-color: #3B8248;
+    cursor: pointer;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+.shop .product-info .add-to-cart i {
+    margin-right: 6px;
+    color: #FFFFFF;
+}
+
+.shop .product-info .add-to-cart:hover {
+    background-color: #2E6E3B;
+}
